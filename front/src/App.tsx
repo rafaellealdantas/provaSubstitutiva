@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import listarImc from "./componentes/listarImc";
+import CadastrarAluno from './componentes/cadastrar';
 
 function App() {
   return (
@@ -23,23 +24,11 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/pages/imc/listar" element={<ListarImc />} />
+          <Route path="/pages/imc/listar" element={<listarImc />} />
           <Route
             path="/pages/aluno/cadastrar"
-            element={<ProdutoListar />}
+            element={<CadastrarAluno />}
           />
-          {/* <Route
-            path="/pages/produto/cadastrar"
-            element={<ProdutoCadastrar />}
-          />
-          <Route
-            path="/pages/cep/consultar"
-            element={<CepConsultar />}
-          />
-          <Route
-            path="/pages/produto/alterar/:id"
-            element={<ProdutoAlterar />}
-          /> */}
         </Routes>
         <footer>
           <p>Desenvolvido por Diogo Steinke Deconto</p>
