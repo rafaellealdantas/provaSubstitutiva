@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import ListarImc from "./componentes/listarImc";
+import listarImc from "./componentes/listarImc";
 
 function App() {
   return (
@@ -23,11 +23,11 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/pages/imc/listar" element={<Listarimc />} />
-          {/* <Route
-            path="/pages/produto/listar"
+          <Route path="/pages/imc/listar" element={<ListarImc />} />
+          <Route
+            path="/pages/aluno/cadastrar"
             element={<ProdutoListar />}
-          /> */}
+          />
           {/* <Route
             path="/pages/produto/cadastrar"
             element={<ProdutoCadastrar />}
