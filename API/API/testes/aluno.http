@@ -1,0 +1,12 @@
+### Cadastrar um aluno
+POST http://localhost:5073/pages/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Rafael",
+    "sobrenome":"Leal",
+     "altura": 1.75,
+    "peso":80
+
+}
+

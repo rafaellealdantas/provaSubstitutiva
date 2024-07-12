@@ -1,0 +1,12 @@
+### Cadastrar imc
+POST http://localhost:5073/pages/imc/cadastrar
+Content-Type: application/json
+
+{
+    "altura": 1.75,
+    "peso":80      
+
+}
+### listar imc
+
+GET http://localhost:5073/pages/imc/listar
